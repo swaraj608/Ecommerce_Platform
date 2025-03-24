@@ -16,8 +16,6 @@ const Navbar = () => {
         backgroundColor: "#001440", // Cecantic Blue background
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)", // Subtle shadow for depth
       }}
-
-      
     >
       <div className="container">
         {/* Brand */}
@@ -48,7 +46,6 @@ const Navbar = () => {
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-
             {/* Search Bar */}
             {showSearch && (
               <div
@@ -61,9 +58,7 @@ const Navbar = () => {
                   padding: "10px",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
                   transition: "opacity 0.5s ease",
-                  
                 }}
-                
               >
                 <input
                   type="text"
@@ -76,17 +71,18 @@ const Navbar = () => {
                     outline: "none",
                   }}
                 />
-                <button style={{
-                    width:"10%",
+                <button
+                  style={{
+                    width: "10%",
                     padding: "8px",
-                    borderRadius: "opx",
+                    borderRadius: "4px",
                     border: "none",
                     outline: "none",
-                    background:"yellow"
-                  }}>
-                    <FaSearch/>
-                  </button>
-                
+                    background: "yellow",
+                  }}
+                >
+                  <FaSearch />
+                </button>
               </div>
             )}
 
@@ -120,7 +116,10 @@ const Navbar = () => {
               >
                 Account
               </Link>
-              <ul className="dropdown-menu" style={{ backgroundColor: "#001440" }}>
+              <ul
+                className="dropdown-menu"
+                style={{ backgroundColor: "#001440" }}
+              >
                 <li>
                   <Link
                     className="dropdown-item"
@@ -144,20 +143,34 @@ const Navbar = () => {
 
             {/* Products */}
             <li className="nav-item">
-              <Link className="nav-link" to="/products" style={{ color: "#ECF0F1" }}>
+              <Link
+                className="nav-link"
+                to="/products"
+                style={{ color: "#ECF0F1" }}
+              >
                 Products
               </Link>
             </li>
 
             {/* Checkout */}
             <li className="nav-item">
-              <Link className="nav-link" to="/checkout" style={{ color: "#ECF0F1" }}>
+              <Link
+                className="nav-link"
+                to="/checkout"
+                style={{ color: "#ECF0F1" }}
+              >
                 Checkout
               </Link>
             </li>
           </ul>
         </div>
       </div>
+
+      <style jsx>{`
+        .dropdown-menu .dropdown-item:hover {
+          color: black !important;
+        }
+      `}</style>
     </nav>
   );
 };
