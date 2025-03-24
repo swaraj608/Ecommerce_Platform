@@ -44,7 +44,7 @@ const ProductPage = () => {
   return (
     <div className="container mt-5">
       <div className="row">
-        {/* Sidebar: Categories and Price Filter */}
+       
         <div className="col-md-3">
           <h5>Categories</h5>
           <ul className="list-group mb-4">

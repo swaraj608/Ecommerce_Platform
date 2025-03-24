@@ -5,13 +5,13 @@ const SellerDashboard = () => {
     <div className="container my-5">
       <h2 className="text-center mb-4">Seller Dashboard</h2>
       
-      {/* Sales Summary */}
+      
       <div className="alert alert-info" role="alert">
         Total Sales This Month: $5,000
       </div>
 
       <div className="row">
-        {/* Active Listings */}
+        
         <div className="col-md-6">
           <h5 className="mb-3">Active Listings</h5>
           <ul className="list-group">

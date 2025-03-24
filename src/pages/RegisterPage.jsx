@@ -5,18 +5,18 @@ const RegisterPage = () => {
     <div
       className="register-page"
       style={{
-        backgroundColor: '#536878', // Payne's Grey 
+        backgroundColor: '#536878', 
         borderRadius: '10px',
         padding: '20px',
         margin: '50px auto',
         maxWidth: '450px',
-        boxShadow: '0px 6px 15px rgba(83, 104, 120, 0.3)', // Soft Payne's Grey shadow
-        color: '#eae0c8', // Pearl text
+        boxShadow: '0px 6px 15px rgba(83, 104, 120, 0.3)', 
+        color: '#eae0c8', 
       }}
     >
       <h2
         className="text-center my-5"
-        style={{ color: '#eae0c8', marginBottom: '30px' }} // Pearl for headings
+        style={{ color: '#eae0c8', marginBottom: '30px' }}
       >
         Sign Up
       </h2>
@@ -31,10 +31,10 @@ const RegisterPage = () => {
               width: '100%',
               padding: '10px',
               marginBottom: '20px',
-              border: '2px solid #eae0c8', // Pearl border
+              border: '2px solid #eae0c8', 
               borderRadius: '5px',
-              backgroundColor: '#f3f3f3', // Light neutral for input background
-              color: '#536878', // Payne's Grey text
+              backgroundColor: '#f3f3f3',
+              color: '#536878', 
             }}
           />
         </div>
@@ -48,10 +48,10 @@ const RegisterPage = () => {
               width: '100%',
               padding: '10px',
               marginBottom: '20px',
-              border: '2px solid #eae0c8', // Pearl border
+              border: '2px solid #eae0c8', 
               borderRadius: '5px',
-              backgroundColor: '#f3f3f3', // Light neutral for input background
-              color: '#536878', // Payne's Grey text
+              backgroundColor: '#f3f3f3',
+              color: '#536878',
             }}
           />
         </div>
@@ -78,21 +78,21 @@ const RegisterPage = () => {
             className="form-control btn btn-primary"
             style={{
               width: '40%',
-              backgroundColor: '#eae0c8', // Pearl button
+              backgroundColor: '#eae0c8', 
               border: 'none',
               padding: '15px',
-              color: '#536878', // Payne's Grey text
+              color: '#536878', 
               fontSize: '1.2rem',
               borderRadius: '10px',
               cursor: 'pointer',
               transition: 'all 0.3s ease',
-              boxShadow: '0px 4px 8px rgba(83, 104, 120, 0.3)', // Payne's Grey shadow
+              boxShadow: '0px 4px 8px rgba(83, 104, 120, 0.3)',
             }}
             onMouseOver={(e) =>
-              (e.target.style.backgroundColor = '#d4cbb5') /* Slightly darker Pearl on hover */
+              (e.target.style.backgroundColor = '#d4cbb5') 
             }
             onMouseOut={(e) =>
-              (e.target.style.backgroundColor = '#eae0c8') /* Reset to original Pearl */
+              (e.target.style.backgroundColor = '#eae0c8') 
             }
           >
             Sign Up
